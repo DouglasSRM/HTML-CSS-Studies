@@ -3,31 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-Fonte / Pré-formatação</h2>
-    <p>O comando <code>document.getElementByID('teste')</code> é escrito em linguagem JavaScript</p>
-    <p>Exemplo código Python:</p>
-    <pre>
-        <code>
-    num = int(input('Digite  um número'))
-    if num % 2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        print(f'O número {num} é IMPAR')
-    print('Fim do programa')
-        </code>
-    </pre>
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Gökhan GÜRLEYEN, no seu livro HTML 5.0:</p>
-    <blockquote cite="https://www.google.com.br/books/edition/HTML_5_0/P6u0EAAAQBAJ?hl=pt-BR&gbpv=1&dq=html&pg=PA6&printsec=frontcover">HTML is not a programming language. An application that works on its own cannot be developed in HTML coding. Coding can only be written by means of intermediary programs that can interpret this language. To be more specific, its a structural language that web browsers make sense of.</blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1"> <!-- 1 A a I i-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para o trabalho</li>
+        <li>Almoçar</li>
+        <li>Voltar pra casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol> <!--</li> é opcional a partir do html 5-->
+    <h2>Listas não Ordenadas</h2>
+    <ul type="disk"> <!-- disk circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+    </ul>
+    <h2>Linguagens</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Pytoh</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Lista de Jogos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castelvania</li>
+        </ul>
+    </ol>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
