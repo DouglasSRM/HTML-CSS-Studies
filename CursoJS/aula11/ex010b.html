@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Insira seu país: <input type="text" name="txtna" id="txtna">
+    <input type="button" value="Verificar" onclick="checar()">
+    <div id="res"></div>
+    <script>
+        function checar() {
+            const txtn = (document.querySelector('input#txtna').value).toLowerCase()
+            const pais = 'brasil'
+            if (txtn == pais) {
+                res.innerHTML = '<p>Você é Brasileiro!</p>'
+            } else {
+                res.innerHTML = '<p>Você é Estrangeiro!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
