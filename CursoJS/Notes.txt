@@ -1,0 +1,126 @@
+# ANOTAÇÕES JAVASCRIPT #
+
+    number.toFixed(2) -> fixa como 2 dígitos decimais.
+
+    > n1 = 1545.5
+    1545.5
+    > n1.toFixed(2)
+    '1545.50'
+    > n1.toLocaleString('pt-BR', {style: 'currency', currency:
+    'BRL'})
+    'R$ 1.545,50'
+
+# OPERADORES #
+
+    Operadores Aritiméricos
+
+     5 + 2 -> 7
+     5 - 2 -> 3
+     5 * 2 -> 10
+     5 / 2 -> 2.5
+     5 % 2 -> 1
+     5 ** 2 -> 25
+
+    Ordem de Precedência
+
+     ----->
+     () | ** | * / % | + -
+
+    Auto-atribuições
+
+     var n = 3
+     n = n + 4       n += 4
+     n = n - 5       n -= 5
+     n = n * 4       n *= 4
+     n = n / 2       n /= 2
+     n = n ** 2      n **= 2
+     n = n % 5       n %= 5
+
+    Incremento
+
+     x = x + 1       x += 1      x++
+     x = x - 1       x -= 1      x--
+
+    Operadores Relacionais
+
+     >
+     <
+     >=
+     <=
+     == (igual)
+     != (diferente)
+     === (identico)
+     !== (desigual restrito)
+
+     Exemplo
+
+     > 5 == 5
+     true
+     > 5 == '5'
+     true
+     > 5 === '5'
+     false
+     > 5 === 5
+     true
+
+    Operadores Lógicos
+
+     ! (negação)
+     && (conjunção) (e)
+     || (disjunção) (ou)
+     2
+    
+    Ordem de Precedência
+
+     ----->
+     () ** / ...| > < >= ...| ! | && | ||
+
+    Operador Ternário
+
+     teste ? true : false
+
+     exemplo:
+     média >= 7.0 ? "Aprovado" : "Reprovado"
+
+# Document Object Model (DOM) #
+
+    - presente dentro do navegador
+    - Árvore DOM
+     Window
+      location
+      document
+       html
+        head
+         meta
+         title
+        body
+         h1
+         p
+         p
+          strong
+         div
+      history
+      
+    Métodos de Acesso
+
+     Marca
+      getElementsByTagName()[]
+     ID
+      getElementById()
+     Nome
+      getElementsByName()[]
+     Classe
+      getElementsByClassName()[]
+     Seletor
+      querySelector() //# para ID, . para classe
+      querySelectorAll()
+     
+    Eventos DOM
+     
+     mouseenter
+     mousemove
+     mousedown
+     mouseup
+     click
+     mouseout
+    
