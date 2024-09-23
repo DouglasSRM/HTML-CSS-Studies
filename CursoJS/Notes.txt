@@ -144,3 +144,49 @@
 
     break
     }
+
+# Repetições #
+
+    while(){}
+
+    do{}while()
+
+    for(inicio; teste; incremento){}
+
+# Arrays #
+
+    let a = []
+    a.sort()
+    a.length
+
+    for(let pos in a){}
+
+    a.indexOf()
+
+/* CÓDIGO DESCARTADO -- anotações para estudo
+
+for (let c in list) {
+    if (n === list[c]) {
+        window.alert('Número já inserido!')
+        return;
+    }
+}
+
+substituido por
+
+if (list.indexOf(n) !== (-1)) {
+    window.alert('Número já inserido!')
+    return;
+}
+
+*/
+
+# Estudar a seguir em JavaScript #
+
+    - functions
+    - objetos
+    - modularização
+    - RegEx
+    - JSON
+    - AJAX
+    - NodeJS
